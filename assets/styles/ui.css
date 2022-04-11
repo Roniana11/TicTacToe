@@ -1,0 +1,55 @@
+.square button {
+  width: 100px;
+  height: 100px;
+  border: black solid 1px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.square_button {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.square_button:hover{
+  background:rgb(222, 233, 255);
+}
+
+.disabled {
+  opacity: 0.6;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  cursor:default;
+}
+
+.modal {
+  position: fixed;
+  top: 25vh;
+  left: 25%;
+  width: 50%;
+  background: white;
+  z-index: 20;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  padding: 20px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="./assets/styles/styleSheet.css" />
+    <link rel="styleSheet" href="./assets/styles/ui.css" />
+    <script type="module" src="./assets/scripts/App.js" defer></script>
+  </head>
+  <body>
+    <template id="modal-template">
+      <div class="backdrop"></div>
+      <div class="modal"></div>
+    </template>
+    <template id="form-template">
+      <form id="gameDetailsForm" class="form">
+        <label for="player1-input-name">Enter Your Name</label>
+        <input id="player1-input-name" type="text" />
+        <label for="player1-input-name">Enter Your Name</label>
+        <input id="player2-input-name" type="text" />
+        <!--         <label>Choose your opponent</label>
+        <div>
+          <input type="radio" id="computer" value="Computer" name="choose-player">
+          <label for="computer">Computer</label><br/>
+          <input type="radio" id="player" value="Player" name="choose-player" />
+          <label for="player">Player 2</label>
+        </div> -->
+        <label>Choose board size</label>
+        <input id="boardsize" type="number" min="3" max="9" />
+        <button type="submit" class="button">START GAME!</button>
+      </form>
+    </template>
+    <template id="message-template">
+      <div id="message-container">
+        <p>put your text here</p>
+        <button id="ok-button" class="button">OK</button>
+      </div>
+    </template>
+    <section>
+      <h1>WELCOME TO TIC-TAC-TOE</h1>
+    </section>
+    <section id="scores">
+      <div>
+        <label id="player1-name"></label>
+        <p id="player1-score">0</p>
+      </div>
+      <div>
+        <label id="player2-name">Player2:</label>
+        <p id="player2-score">0</p>
+      </div>
+    </section>
+    <section id="game"></section>
+    <section>
+      <button id="initGameButton" class="startBtn">START!</button>
+      <button id="resumeGameButton" class="button resumeBtn">
+        RESUME GAME
+      </button>
+    </section>
+  </body>
+</html>
